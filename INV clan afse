@@ -22,7 +22,7 @@ local npcTab = window:AddTab("NPC")
 local miscTab = window:AddTab("Misc")
 
 -- Anti-AFK Button
-miscTab:AddButton("Anti Afk", function()
+miscTab:AddButton("Anti Afk (beta)", function()
     -- Connect the Idled event inside the button callback
     game.Players.LocalPlayer.Idled:Connect(function()
         VirtualUser:CaptureController()
