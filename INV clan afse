@@ -1,0 +1,193 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KyleXAkimbo/Gui/refs/heads/main/INV-UI"))()
+
+local window = library:AddWindow("INV HUB ||made by invincible", {
+    main_color = Color3.fromRGB(0, 0, 0), -- Color
+    min_size = Vector2.new(630, 800), -- Size of the gui
+    can_resize = false, -- true or false
+})
+
+-- Credits
+local creditsTab = window:AddTab("Credits")
+creditsTab:AddLabel("made by Invincible")
+creditsTab:AddLabel("https://discord.gg/bUythM4H")
+creditsTab:AddLabel("thank you everyone")
+
+local teleportTab = window:AddTab("Teleport")
+local bossTab = window:AddTab("Bosses")
+local npcTab = window:AddTab("NPC")
+local miscTab = window:AddTab("Misc")
+local creditsTab = window:AddTab("Credits")
+
+-- Function to teleport player to specific CFrame
+local function teleportPlayer(cframe)
+    local player = game.Players.LocalPlayer
+    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = cframe
+    end
+end
+
+-- Teleport Buttons
+teleportTab:AddButton("1M strength", function()
+    teleportPlayer(CFrame.new(-905.62, 82.07, 172.17))
+end)
+
+teleportTab:AddButton("10M strength", function()
+    teleportPlayer(CFrame.new(-2274.72778, 665.36792, 528.127563, -0.403091997, 9.96172655e-09, 0.915159464, 1.53711444e-08, 1, -4.11484713e-09, -0.915159464, 1.24083863e-08, -0.403091997))
+end)
+
+teleportTab:AddButton("100M strength", function()
+    teleportPlayer(CFrame.new(-51.0139999, 63.5114403, -1302.73206, 1, -7.41235482e-08, 2.76920143e-13, 7.41235482e-08, 1, -1.13816876e-08, -2.76076498e-13, 1.13816876e-08))
+end)
+
+teleportTab:AddButton("1b strength", function()
+    teleportPlayer(CFrame.new(714.550781, 140.580719, 938.548767, 0.957564414, -2.30511921e-09, -0.288219333, -1.17250814e-08, 1, -4.69525752e-08, 0.288219333, 4.83395119e-08, 0.957564414))
+end)
+
+teleportTab:AddButton("100b strength", function()
+    teleportPlayer(CFrame.new(1846.15295, 140.532867, 90.4680023, 1, -3.19980735e-08, -5.09346593e-14, 3.19980735e-08, 1, 4.07548555e-08, 4.96305809e-14, -4.07548555e-08))
+end)
+
+teleportTab:AddButton("5T strength", function()
+    teleportPlayer(CFrame.new(1846.15295, 140.532867, 90.4680023, 1, 5.70071776e-08, -1.56642397e-12, -5.70071776e-08, 1, -7.27330445e-08, 1.56227765e-12, 7.27330445e-08, 1))
+end)
+
+teleportTab:AddButton("250T strength", function()
+    teleportPlayer(CFrame.new(4315.36035, 63.5203743, -524.74176, 0.157272413, 9.17566396e-08, -0.987555265, 5.48312933e-08, 1, 1.01645035e-07, 0.987555265, -7.01348952e-08, 0.157272413))
+end)
+
+teleportTab:AddButton("50qd strength", function()
+    teleportPlayer(CFrame.new(797.981018, 231.731964, -1002.742, 1, 2.01920347e-09, -2.1800829e-14, -2.01920347e-09, 1, -2.15970282e-08, 2.17572203e-14, 2.15970282e-08, 1))
+end)
+
+teleportTab:AddButton("1Qn strength", function()
+    teleportPlayer(CFrame.new(3886.14673, 127.192482, 875.65448, -0.855604351, -1.1148137e-07, -0.517630339, -9.07311559e-08, 1, -6.53968542e-08, 0.517630339, -8.98863828e-09, -0.855604351))
+end)
+
+teleportTab:AddButton("1000Qn strength", function()
+    teleportPlayer(CFrame.new(3933.35498, 724.104492, -1197.85803, 1, -8.5261334e-08, -1.9429301e-14, 8.5261334e-08, 1, 6.87652468e-09, 1.88430001e-14, -6.87652468e-09, 1))
+end)
+
+-- Dura teleport buttons
+teleportTab:AddButton("1m dura", function()
+    teleportPlayer(CFrame.new(-621.54303, 178.33287, 741.890015, 1, -6.2650571e-08, 4.22606259e-13, 6.2650571e-08, 1, -4.67080987e-08, -4.1967997e-13, 4.67080987e-08, 1))
+end)
+
+teleportTab:AddButton("10m dura", function()
+    teleportPlayer(CFrame.new(-1102.31104, 211.962875, -946.14502, 1, 3.61321e-08, 1.61597369e-14, -3.61321e-08, 1, 2.69685216e-08, -1.51853085e-14, -2.69685216e-08, 1))
+end)
+
+teleportTab:AddButton("100m dura", function()
+    teleportPlayer(CFrame.new(-341.295013, 71.952919, -1653.57898, 1, 8.1236351e-08, 2.43443978e-14, -8.1236351e-08, 1, 6.070848e-08, -1.94126636e-14, -6.070848e-08, 1))
+end)
+
+teleportTab:AddButton("1b dura", function()
+    teleportPlayer(CFrame.new(2494.74365, 1539.05249, -351.093262, 0.994515836, -2.18120952e-08, -0.104586348, 1.63261245e-08, 1, -5.33100959e-08, 0.104586348, 5.13102414e-08, 0.994515836))
+end)
+
+teleportTab:AddButton("100b dura", function()
+    teleportPlayer(CFrame.new(-2171.54297, 616.849731, 525.640015, 1, 2.78600076e-08, 3.87720556e-14, -2.78600076e-08, 1, 9.16167622e-08, -3.62196133e-14, -9.16167622e-08, 1))
+end)
+
+teleportTab:AddButton("5T dura", function()
+    teleportPlayer(CFrame.new(2188.85107, 517.823425, 576.671448, 0.99974823, 1.06618607e-08, 0.0224382021, -1.11795622e-08, 1, 2.29468657e-08, -0.0224382021, -2.3191939e-08, 0.99974823))
+end)
+
+teleportTab:AddButton("250T dura", function()
+    teleportPlayer(CFrame.new(1671.97473, 423.262909, -1291.61511, 0.999993026, -4.50041338e-09, -0.00373420538, 4.48531567e-09, 1, -4.05150891e-09, 0.00373420538, 4.03473166e-09, 0.999993026))
+end)
+
+teleportTab:AddButton("50qd dura", function()
+    teleportPlayer(CFrame.new(165.322006, 772.924133, -716.060974, 1, 1.7310203e-08, 1.20002342e-13, -1.7310203e-08, 1, 1.554967e-08, -1.19733176e-13, -1.554967e-08, 1))
+end)
+
+teleportTab:AddButton("1Qn dura", function()
+    teleportPlayer(CFrame.new(2590.823, 62.5618439, 1697.29504, 1, -3.05529859e-08, 1.53466175e-13, 3.05529859e-08, 1, -2.74990146e-08, -1.52625999e-13, 2.74990146e-08, 1))
+end)
+
+teleportTab:AddButton("100Qn dura", function()
+    teleportPlayer(CFrame.new(1726.68701, 2304.39966, 61.9370003, 1, -6.83984851e-08, 6.48838351e-14, 6.83984851e-08, 1, -6.16340969e-08, -6.06681521e-14, 6.16340969e-08, 1))
+end)
+
+--chakra teleport buttons
+teleportTab:AddButton("1m chakra", function()
+    teleportPlayer(CFrame.new(1576.37305, 388.082794, 675.159973, 1, -2.56392916e-08, 8.61154003e-15, 2.56392916e-08, 1, -2.31262174e-08, -8.01860087e-15, 2.31262174e-08, 1))
+end)
+
+teleportTab:AddButton("10m chakra", function()
+    teleportPlayer(CFrame.new(334.134003, -130.258972, -1840.66003, 1, -1.01203792e-08, 6.45691318e-14, 1.01203792e-08, 1, -9.11960729e-09, -6.44768391e-14, 9.11960729e-09, 1))
+end)
+
+teleportTab:AddButton("100m chakra", function()
+    teleportPlayer(CFrame.new(1025.95532, 250.33287, -631.354309, -0.976074696, 3.96296542e-08, -0.217435479, 3.15736237e-08, 1, 4.05243803e-08, 0.217435479, 3.2689595e-08, -0.976074696))
+end)
+
+teleportTab:AddButton("1b chakra", function()
+    teleportPlayer(CFrame.new(3053.94092, 110.233376, 1105.88, 1, -2.19682335e-08, -6.61084617e-14, 2.19682335e-08, 1, 1.81266664e-08, 6.57102478e-14, -1.81266664e-08, 1))
+end)
+
+teleportTab:AddButton("100b chakra", function()
+    teleportPlayer(CFrame.new(1552.18799, 88.0570755, 1717.49805, 1, -1.17141079e-08, -1.01628173e-14, 1.17141079e-08, 1, 9.65470637e-09, 1.00497207e-14, -9.65470637e-09, 1))
+end)
+
+teleportTab:AddButton("5T chakra", function()
+    teleportPlayer(CFrame.new(-17.0939999, 61.4061432, -478.994995, 1, 2.63649209e-08, -1.23049374e-14, -2.63649209e-08, 1, -2.17220286e-08, 1.17322381e-14, 2.17220286e-08, 1))
+end)
+
+teleportTab:AddButton("250T chakra", function()
+    teleportPlayer(CFrame.new(-396.256989, 1236.69153, 670.549988, 1, -2.86684241e-08, -1.36555467e-14, 2.86684241e-08, 1, 2.35959483e-08, 1.29790884e-14, -2.35959483e-08, 1))
+end)
+
+teleportTab:AddButton("50qd chakra", function()
+    teleportPlayer(CFrame.new(-742.157532, 2794.49707, 597.357605, -0.948044002, -8.8696428e-09, 0.318139315, -1.97626221e-07, 1, -5.61039485e-07, -0.318139315, -5.94762753e-07, -0.948044002))
+end)
+
+teleportTab:AddButton("1Qn chakra", function()
+    teleportPlayer(CFrame.new(3254.87988, -441.64502, -242.198975, -7.16817725e-15, -8.18557133e-09, 1, -8.21828994e-10, 1, 8.18557133e-09, -1, -8.21828994e-10, -7.17490439e-15))
+end)
+
+teleportTab:AddButton("chakra", function()
+    teleportPlayer(CFrame.new(358.65625, 291.694, 1863.7865, 0.995459676, 3.80695404e-08, 0.0951843411, -4.12339283e-08, 1, 3.12779775e-08, -0.0951843411, -3.50607898e-08, 0.995459676))
+end)
+
+-- Special locations
+teleportTab:AddButton("100k speed/agil", function()
+    teleportPlayer(CFrame.new(3484.51709, 59.9308243, 144.701004, 1, -2.79926393e-08, -2.41393033e-13, 2.79926393e-08, 1, 6.66034765e-08, 2.39528639e-13, -6.66034765e-08, 1))
+end)
+
+teleportTab:AddButton("5mil speed/agil", function()
+    teleportPlayer(CFrame.new(4111.81201, 60.852787, 849.557007, 1, -7.67132491e-09, -1.91139032e-14, 7.67132491e-09, 1, 1.82364044e-08, 1.89740056e-14, -1.82364044e-08, 1))
+end)
+
+-- Miscellaneous
+miscTab:AddButton("Prevent Lag (Boost FPS)", function()
+    local Lighting = game:GetService("Lighting")
+    Lighting.GlobalShadows = false
+    Lighting.Brightness = 1
+    Lighting.ClockTime = 12
+    Lighting.FogEnd = 9999
+    Lighting.FogStart = 0
+    for _, v in pairs(workspace:GetDescendants()) do
+        if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Fire") or v:IsA("Sparkles") or
+           v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("DepthOfFieldEffect") or v:IsA("SunRaysEffect") then
+            v.Enabled = false
+        end
+    end
+    settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+end)
+
+-- NPC Teleports
+npcTab:AddButton("ichigo", function()
+    teleportPlayer(CFrame.new(297.918121, 220.930817, -1614.56653, 0.513736904, -9.54774038e-09, -0.857947767, -1.59238234e-09, 1, -1.20820944e-08, 0.857947767, 7.57319896e-09, 0.513736904))
+end)
+
+npcTab:AddButton("the waifu's-", function()
+    teleportPlayer(CFrame.new(232.053223, 60.9308243, -379.009125, 0.999530613, -3.2730604e-08, 0.0306354202, 3.40958941e-08, 1, -4.40433183e-08, -0.0306354202, 4.50671855e-08, 0.999530613))
+end)
+
+npcTab:AddButton("Booh", function()
+    teleportPlayer(CFrame.new(1556.34607, 140.930817, 130.769577, -0.0775194839, 6.77696832e-09, -0.99699086, 2.63064237e-10, 1, 6.77696832e-09, 0.99699086, 2.63064237e-10, -0.0775194839))
+end)
+
+npcTab:AddButton("Remgonuk", function()
+    teleportPlayer(CFrame.new(4293.25098, 59.9808235, 101.262352, -0.95811981, 2.59109445e-09, -0.286367565, 4.79066176e-10, 1, 7.44529682e-09, 0.286367565, 6.99629732e-09, -0.95811981))
+end)
