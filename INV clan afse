@@ -21,11 +21,13 @@ local bossTab = window:AddTab("Bosses")
 local npcTab = window:AddTab("NPC")
 local miscTab = window:AddTab("Misc")
 
--- Anti-AFK
-miscTab:AddButton("Anti Afk",
-LocalPlayer.Idled:Connect(function()
-    VirtualUser:CaptureController()
-    VirtualUser:ClickButton2(Vector2.new())
+-- Anti-AFK Button
+miscTab:AddButton("Anti Afk", function()
+    -- Connect the Idled event inside the button callback
+    game.Players.LocalPlayer.Idled:Connect(function()
+        VirtualUser:CaptureController()
+        VirtualUser:ClickButton2(Vector2.new())
+    end)
 end)
 
 -- Function to teleport player to specific CFrame
