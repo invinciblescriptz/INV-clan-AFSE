@@ -22,6 +22,7 @@ local npcTab = window:AddTab("NPC")
 local miscTab = window:AddTab("Misc")
 
 -- Anti-AFK
+miscTab:AddButton("Anti Afk",
 LocalPlayer.Idled:Connect(function()
     VirtualUser:CaptureController()
     VirtualUser:ClickButton2(Vector2.new())
